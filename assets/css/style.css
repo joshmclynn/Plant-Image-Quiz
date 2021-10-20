@@ -1,9 +1,43 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
-#gameScreen{
-    width:100%;
+/*Mobile first 375px*/
+.game{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30%;
+   
     
+    grid-template-areas: 
+    "imageQuestion"
+    "answers"
+    "sidebar"
     
-    background-color: green;
+    ;
+
+    
+
 }
+.imageQuestion{
+    grid-area: imageQuestion;
+    height:280px;
+}
+.sidebar{
+    grid-area: sidebar;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50%;
+    
+}
+
+
+.answers{
+    grid-area: answers;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+    grid-area: 
+    "1 2"
+    "3 4";
+}
+
