@@ -6,6 +6,7 @@ html{
     display:grid;
     grid-template-columns: 100%;
     grid-template-rows: 30%;
+    height:760px;
    
     
     grid-template-areas: 
@@ -20,7 +21,8 @@ html{
 }
 .imageQuestion{
     grid-area: imageQuestion;
-    height:280px;
+    
+    padding-bottom: 20px;
 }
 .sidebar{
     grid-area: sidebar;
@@ -41,3 +43,7 @@ html{
     "3 4";
 }
 
+#imageArea{
+    height:200px;
+    color: brown;
+}
