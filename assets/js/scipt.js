@@ -1,18 +1,40 @@
-const fiftyFity = document.getElementById("fiftyfifty");
-const audience = document.getElementById("audience");
-const friend = document.getElementById("friend")
-const image = document.getElementById("imageArea");
-ctx = image.getContext('2d');
+function runGame(){
 
+};
 
-//images
-var images = {
-  "anenomePic" :"assets\img\anenome.jpg",
-  "erigeronpic" :"assets\img\erigeron.jpg",
-  "osmanthuspic" :"assets\img\osmanthus.jpg"
-}
+function checkAnswer(){
 
-//Questions
+};
+
+function score(){
+
+};
+
+function audience(){
+
+};
+//percentage answer millionare style
+
+function fiftyFifty(){
+
+};
+//take off two wrong answers
+
+function friend(){
+
+};//your friend isnt sure, your friend knows the answer alert etc.
+
+function displayQ1(){
+
+};
+
+function displayQ2(){
+
+};
+
+function displayQ3(){
+
+};
 
 
 
