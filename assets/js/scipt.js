@@ -14,14 +14,6 @@ var images = {
 
 //Questions
 
-new newQuestion("anenomePic",["Anenome","Rose","Tree","Sunflower"],"anenome");
 
-function question(image,choices,answer){
-  this.image = image;
-  this.choice = choices;
-  this.answer = answer;
-
-}
-  
 
 
