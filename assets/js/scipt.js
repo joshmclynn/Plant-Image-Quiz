@@ -6,11 +6,8 @@ ctx = image.getContext('2d');
 
 
 //images
-var images = {
-  "anenomePic" :"assets\img\anenome.jpg",
-  "erigeronpic" :"assets\img\erigeron.jpg",
-  "osmanthuspic" :"assets\img\osmanthus.jpg"
-}
+
+
 
 //Questions
 
