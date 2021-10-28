@@ -1,7 +1,11 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*Mobile first 375px*/
+#head{
+    text-align: center;
+}
 .game{
     display:grid;
     grid-template-columns: 100%;
@@ -29,6 +33,7 @@ html{
     display:grid;
     grid-template-columns: 100%;
     grid-template-rows: 50%;
+    text-align: center;
     
 }
 
@@ -45,5 +50,5 @@ html{
 
 #imageArea{
     height:200px;
-    color: brown;
+    
 }
