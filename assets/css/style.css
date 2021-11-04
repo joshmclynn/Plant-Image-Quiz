@@ -9,7 +9,7 @@ html{
 #game{
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30%;
+    grid-template-rows: 50%,25%,25%;
     height:760px;
    
     
@@ -27,6 +27,10 @@ html{
     grid-area: imageQuestion;
     
     padding-bottom: 20px;
+}
+#imageQuestion>img{
+    height:350px;
+    margin-left: 50px;
 }
 #sidebar{
     grid-area: sidebar;
@@ -48,7 +52,3 @@ html{
     "3 4";
 }
 
-#imageArea{
-    height:200px;
-    
-}
