@@ -1,60 +1,78 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-  console.log('DOM fully loaded and parsed');
-});
+
+
 const start = document.getElementById('startQuiz');
 const questioncon = document.getElementById('imageQuestion');
 const quiz = document.getElementById("game");
-const answerbtn = document.getElementsByClassName("answbtn");
+const answer1 = document.getElementById("answer1");
+const answer2 = document.getElementById("answer2");
+const answer3 = document.getElementById("answer3");
+const answer4 = document.getElementById("answer4");
+const score = document.getElementById("score");
+let currentScore = 0;
+let  currentQuestion = 0;
 
-start.addEventListener('click',newGame);
-let currentScore
-let  currentQuestion,randomNumberArr;
 
 
-function newGame(){
-    
-    
-    currentQuestion = 0;
-    randomNumberArr = questionArr.sort(()=> Math.random() - .5);
-    getNextQuestion();
-    currentScore = 0;
-    checkAnswer();
+
+
+
+
+
+function loadNextQ(){
+  currentQuestion = currentQuestion +1;
+  getNextQuestion();
 }
 
 
 
 //creates question and loads answers onto buttons x 4
 function getNextQuestion(){
-    currentQuestion = currentQuestion ++;
-    if(currentQuestion >= questionArr.length){
-      endGame();
+    if(currentQuestion>=questionArr.length){
+      console.log("endgame")
     }
-    loadQuestion(randomNumberArr[currentQuestion]);
-    document.getElementById("answer1").innerHTML = questionArr[currentQuestion].choices[0];
-    document.getElementById("answer2").innerHTML = questionArr[currentQuestion].choices[1];
-    document.getElementById("answer3").innerHTML = questionArr[currentQuestion].choices[2];
-    document.getElementById("answer4").innerHTML = questionArr[currentQuestion].choices[3];
-}
-//loads question element to question container
-function loadQuestion(question){
-    questioncon.innerHTML = "<img src =" +question.question+">";
-}
-
-function checkAnswer(){
-
-    }
-      
-
+    else{
+    a = questionArr[currentQuestion];
     
-    ;
+      questioncon.innerHTML = "<img src =" + a.question +">";
+      answer1.innerHTML = a.choice1;
+      answer2.innerHTML = a.choice2;
+      answer3.innerHTML = a.choice3;
+      answer4.innerHTML = a.choice4;
+      }
+}
+    
+    
+    
 
-function endGame(){
 
 
 
+function userChoice(answer){
+  
+  
+  if(answer === questionArr[currentQuestion].correctAnswer){
+    currentScore = currentScore+1;
+    
+    updateScore();
+    loadNextQ();
+   
+     
+    
+    
+  }
+  else{
+    console.log("wrong");
+    loadNextQ();
+
+  }
+  
+  
+    
 }
 
-
+function updateScore(){
+  score.innerHTML = currentScore;
+}
 /**Question list
  */
 
@@ -62,22 +80,41 @@ function endGame(){
 
 let questionArr = [
   {
-    question: "assets/img/anenome.jpg",
-    choices: ["Sunflower","Erigeron","Osmanthus","Anenome"],
-    correctAnswer:"Anenome",
+    question : "assets/img/anenome.jpg",
+    choice1 :"Sunflower",
+    choice2 :"Erigeron",
+    choice3 :"Osmanthus",
+    choice4 :"Anenome",
+    correctAnswer :"d",
   },
   {
-    question: "assets/img/osmanthus.jpg",
-    choices: ["Sunflower","Erigeron","Osmanthus","Anenome"],
-    correctAnswer:"Osmanthus"},
+    question : "assets/img/osmanthus.jpg",
+    choice1 :"Sunflower",
+    choice2 :"Erigeron",
+    choice3 :"Osmanthus",
+    choice4 :"Anenome",
+    correctAnswer :"c",
+  },
   {
-    question: "assets/img/erigeron.jpg",
-    choices: ["Sunflower","Erigeron","Osmanthus","Anenome"],
-    correctAnswer:"Erigeron",
+    question : "assets/img/erigeron.jpg",
+    choice1 :"Sunflower",
+    choice2 :"Erigeron",
+    choice3 :"Osmanthus",
+    choice4 :"Anenome",
+    correctAnswer:"b",
 },
 ]
-
-
+start.addEventListener('click',newGame);
+function newGame(){
+    
+    
+  currentQuestion = 0;
+ 
+  getNextQuestion();
+  currentScore = 0;
+  
+  
+}
 
 //calls next question
 
@@ -88,24 +125,16 @@ let questionArr = [
 
 
 
-function audience(){
+//function audience(){
 
-};
+//};
 //percentage answer millionare style
 
-function fiftyFifty(){
+//function fiftyFifty(){
 
-};
+//};
 //take off two wrong answers
 
-function friend(){
+//function friend(){
 
-};//your friend isnt sure, your friend knows the answer alert etc.
-
-
-
-
-
-
-
-
+//};//your friend isnt sure, your friend knows the answer alert etc.

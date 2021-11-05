@@ -52,3 +52,15 @@ html{
     "3 4";
 }
 
+#answbtn{
+    width : 480px;
+    position: absolute;
+    right : 0;
+    top : 125px;
+    padding : 10px
+}
+
+.answbtn:hover{
+    border : 2px solid grey;
+    font-weight: bold;
+}
