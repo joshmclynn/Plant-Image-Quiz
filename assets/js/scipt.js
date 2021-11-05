@@ -10,6 +10,7 @@ const answer4 = document.getElementById("answer4");
 const score = document.getElementById("score");
 const end = document.getElementById("end");
 const endGamebtn = document.getElementById("endGame");
+const welcome = document.getElementById("welcome");
 let currentScore = 0;
 let  currentQuestion = 0;
 
@@ -92,11 +93,34 @@ function endGame(){
   game.style.display = "none";
   end.style.display = "block";
   end.innerHTML = currentScore;
+  
+  
   console.log("endgame")
   endGamebtn.style.display="block";
 }
+function reset(){
+  currentScore = 0;
+  location.reload();
+}
+//function fifty(){
+    
+  
+    
+    
+    
 
 
+
+
+    
+//}
+
+//let friendans = [
+ // { answer: "I think it might be"+f+"ninety percent sure!"},
+//  { answer: "Sorry mate I really dont have a clue"},
+ // { answer: "Ah it could be"+a+"or it might be"+f+"i'm not entirely sure?"},
+
+//]
 let questionArr = [
   {
     question : "assets/img/anenome.jpg",
@@ -105,6 +129,7 @@ let questionArr = [
     choice3 :"Osmanthus",
     choice4 :"Anenome",
     correctAnswer :"d",
+
   },
   {
     question : "assets/img/osmanthus.jpg",
@@ -133,8 +158,11 @@ start.addEventListener('click',newGame);
 function newGame(){
     
   start.style.display = "none";
+  welcome.style.display = "none";
   game.style.display = "grid";
+
   currentQuestion = 0;
+
  
   getNextQuestion();
   currentScore = 0;

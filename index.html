@@ -22,11 +22,15 @@
             </button>
         </div>
         <div id = "endGame" style="display:none">
-            <button id="home" onclick = "index.html">
+            <button id="home" onclick = "reset()">
                 Home
             </button>
         </div>
-        
+        <div id = welcome>
+            <h2>Welcome</h2>
+            <p>Try your hand at guessing these plants from the pictures provided</p>
+            
+        </div>
         
         
         <div id="game" style="display:none">
@@ -34,26 +38,26 @@
             
             
             <div id="imageQuestion">
-                iasdkljasdjkl
+               
             </div>
             
             <div id="answers">
                 
-                <button id="answer1" class = "answbtn" onclick="userChoice('a')">a</button>
-                <button id="answer2" class = "answbtn" onclick="userChoice('b')">b</button>
-                <button id="answer3" class = "answbtn" onclick="userChoice('c')">c</button>
-                <button id="answer4" class = "answbtn" onclick="userChoice('d')">d</button>
+                <button id="answer1" class = "answbtn" onclick="userChoice('a')"></button>
+                <button id="answer2" class = "answbtn" onclick="userChoice('b')"></button>
+                <button id="answer3" class = "answbtn" onclick="userChoice('c')"></button>
+                <button id="answer4" class = "answbtn" onclick="userChoice('d')"></button>
                 
             </div>
             <div id="sidebar">
                 
                 <div id="help">
                     <h3 id="lifelines">LifeLines</h3>
-                    <button id="friend">
+                    <button id="friend" onclick = "friend()">
                         Phone a friend
                     </button>
-                    <button id="fiftyfifty">
-                        50/50
+                    <button id="fiftyfifty" onclick ="fiftyfifty()">
+                        fiftyfifty
                     </button>
                     <button id="audience">
                         Ask the audience
