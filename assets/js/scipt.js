@@ -8,6 +8,8 @@ const answer2 = document.getElementById("answer2");
 const answer3 = document.getElementById("answer3");
 const answer4 = document.getElementById("answer4");
 const score = document.getElementById("score");
+const end = document.getElementById("end");
+const endGamebtn = document.getElementById("endGame");
 let currentScore = 0;
 let  currentQuestion = 0;
 
@@ -20,26 +22,29 @@ let  currentQuestion = 0;
 
 function loadNextQ(){
   currentQuestion = currentQuestion +1;
+  if(currentQuestion>=questionArr.length){
+    
+    endGame();
+  }else{
   getNextQuestion();
+}
 }
 
 
 
 //creates question and loads answers onto buttons x 4
 function getNextQuestion(){
-    if(currentQuestion>=questionArr.length){
-      console.log("endgame")
-    }
-    else{
-    a = questionArr[currentQuestion];
     
+  
+    a = questionArr[currentQuestion];
       questioncon.innerHTML = "<img src =" + a.question +">";
       answer1.innerHTML = a.choice1;
       answer2.innerHTML = a.choice2;
       answer3.innerHTML = a.choice3;
       answer4.innerHTML = a.choice4;
       }
-}
+
+
     
     
     
@@ -69,13 +74,27 @@ function userChoice(answer){
   
     
 }
+function correctAnswer(){
+  Swal.fire({
+    icon: 'success',
+    title: 'Correct!',
+    
+  })
+}
+
 
 function updateScore(){
   score.innerHTML = currentScore;
 }
 /**Question list
  */
-
+function endGame(){
+  game.style.display = "none";
+  end.style.display = "block";
+  end.innerHTML = currentScore;
+  console.log("endgame")
+  endGamebtn.style.display="block";
+}
 
 
 let questionArr = [
@@ -104,10 +123,17 @@ let questionArr = [
     correctAnswer:"b",
 },
 ]
+let phoneAFriend= [
+  {}
+]
+
+
+
 start.addEventListener('click',newGame);
 function newGame(){
     
-    
+  start.style.display = "none";
+  game.style.display = "grid";
   currentQuestion = 0;
  
   getNextQuestion();
