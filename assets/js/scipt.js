@@ -39,10 +39,10 @@ function getNextQuestion(){
   
     a = questionArr[currentQuestion];
       questioncon.innerHTML = "<img src =" + a.question +">";
-      answer1.innerHTML = a.choice1;
-      answer2.innerHTML = a.choice2;
-      answer3.innerHTML = a.choice3;
-      answer4.innerHTML = a.choice4;
+      answer1.innerHTML = a.choice1[0];
+      answer2.innerHTML = a.choice2[0];
+      answer3.innerHTML = a.choice3[0];
+      answer4.innerHTML = a.choice4[0];
       }
 
 
@@ -81,6 +81,42 @@ function correctAnswer(){
     title: 'Correct!',
     
   })
+}
+function fifty(){
+    x = questionArr[currentQuestion].correctAnswer;
+    a = questionArr[currentQuestion];
+    if(x == a.choice1[1]){
+      answer1.innerHTML = a.choice1[0];
+      answer2.innerHTML = a.choice2[0];
+      answer3.innerHTML = '';
+      answer4.innerHTML = '';
+      
+      
+    }
+    if(x == a.choice2[1]){
+      answer1.innerHTML = '';
+      answer2.innerHTML = a.choice2[0];
+      answer3.innerHTML = a.choice3[0];
+      answer4.innerHTML = '';
+      
+    }
+    if(x == a.choice3[1]){
+      answer1.innerHTML = '';
+      answer2.innerHTML = '';
+      answer3.innerHTML = a.choice3[0];
+      answer4.innerHTML = a.choice4[0];
+      
+      
+    }
+    if(x == a.choice4[1]){
+      answer1.innerHTML = '';
+      answer2.innerHTML = a.choice2[0];
+      answer3.innerHTML = '';
+      answer4.innerHTML = a.choice4[0];
+      
+    }
+    
+    ;
 }
 
 
@@ -124,27 +160,28 @@ function reset(){
 let questionArr = [
   {
     question : "assets/img/anenome.jpg",
-    choice1 :"Sunflower",
-    choice2 :"Erigeron",
-    choice3 :"Osmanthus",
-    choice4 :"Anenome",
+    choice1 :["Sunflower","a"],
+    choice2 :["Erigeron","b"],
+    choice3 :["Osmanthus","c"],
+    choice4 :["Anenome","d"],
     correctAnswer :"d",
+   
 
   },
   {
     question : "assets/img/osmanthus.jpg",
-    choice1 :"Sunflower",
-    choice2 :"Erigeron",
-    choice3 :"Osmanthus",
-    choice4 :"Anenome",
+    choice1 :["Sunflower","a"],
+    choice2 :["Erigeron","b"],
+    choice3 :["Osmanthus","c"],
+    choice4 :["Anenome","d"],
     correctAnswer :"c",
   },
   {
     question : "assets/img/erigeron.jpg",
-    choice1 :"Sunflower",
-    choice2 :"Erigeron",
-    choice3 :"Osmanthus",
-    choice4 :"Anenome",
+    choice1 :["Sunflower","a"],
+    choice2 :["Erigeron","b"],
+    choice3 :["Osmanthus","c"],
+    choice4 :["Anenome","d"],
     correctAnswer:"b",
 },
 ]
