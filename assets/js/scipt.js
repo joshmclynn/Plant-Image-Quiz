@@ -11,6 +11,8 @@ const score = document.getElementById("score");
 const end = document.getElementById("end");
 const endGamebtn = document.getElementById("endGame");
 const welcome = document.getElementById("welcome");
+const friendbtn = document.getElementById("friend");
+const fiftybtn = document.getElementById("fiftyfifty")
 let currentScore = 0;
 let  currentQuestion = 0;
 
@@ -63,7 +65,7 @@ function userChoice(answer){
   
   if(answer === questionArr[currentQuestion].correctAnswer){
     currentScore = currentScore+1;
-    
+    correctAnswer();
     updateScore();
     loadNextQ();
    
@@ -87,6 +89,7 @@ function correctAnswer(){
     
   })
 }
+//fifty fifty chance function
 function fifty(){
     x = questionArr[currentQuestion].correctAnswer;
     a = questionArr[currentQuestion];
@@ -120,8 +123,29 @@ function fifty(){
       answer4.innerHTML = a.choice4[0];
       
     }
-    
+    fiftybtn.disabled=true;
     ;
+}
+function friend(){
+    
+    r = Math.floor(Math.random()*(0,2));
+    console.log(r);
+    if(r<=1){
+      Swal.fire({
+        title: "Phoning Friend",
+        text: "Could be anything mate"
+
+      })
+    }
+    if(r>=1){
+      Swal.fire({
+        title: "Phoning Friend",
+        text: "notusre"
+
+      })
+    }
+    friendbtn.disabled=true;
+    
 }
 
 
@@ -143,25 +167,11 @@ function reset(){
   currentScore = 0;
   location.reload();
 }
-//function fifty(){
-    
-  
-    
-    
-    
 
 
 
 
-    
-//}
 
-//let friendans = [
- // { answer: "I think it might be"+f+"ninety percent sure!"},
-//  { answer: "Sorry mate I really dont have a clue"},
- // { answer: "Ah it could be"+a+"or it might be"+f+"i'm not entirely sure?"},
-
-//]
 let questionArr = [
   {
     question : "assets/img/anenome.jpg",
@@ -190,9 +200,7 @@ let questionArr = [
     correctAnswer:"b",
 },
 ]
-let phoneAFriend= [
-  {}
-]
+
 
 
 
@@ -202,7 +210,8 @@ function newGame(){
   start.style.display = "none";
   welcome.style.display = "none";
   game.style.display = "grid";
-
+  friendbtn.disabled=false;
+  fifty.disabled=false;
   currentQuestion = 0;
 
  
@@ -212,7 +221,6 @@ function newGame(){
   
 }
 
-//calls next question
 
 
 
@@ -221,16 +229,4 @@ function newGame(){
 
 
 
-//function audience(){
 
-//};
-//percentage answer millionare style
-
-//function fiftyFifty(){
-
-//};
-//take off two wrong answers
-
-//function friend(){
-
-//};//your friend isnt sure, your friend knows the answer alert etc.
