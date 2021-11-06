@@ -63,7 +63,7 @@ function getNextQuestion(){
 function userChoice(answer){
   
   
-  if(answer === questionArr[currentQuestion].correctAnswer){
+  if(answer === questionArr[currentQuestion].correctAnswer[0]){
     currentScore = currentScore+1;
     correctAnswer();
     updateScore();
@@ -75,6 +75,7 @@ function userChoice(answer){
   }
   else{
     console.log("wrong");
+    incorrectAnswer();
     loadNextQ();
 
   }
@@ -89,9 +90,16 @@ function correctAnswer(){
     
   })
 }
+function incorrectAnswer(){
+  Swal.fire({
+    icon: 'error',
+    title: 'Incorrect',
+    
+  })
+}
 //fifty fifty chance function
 function fifty(){
-    x = questionArr[currentQuestion].correctAnswer;
+    x = questionArr[currentQuestion].correctAnswer[0];
     a = questionArr[currentQuestion];
     if(x == a.choice1[1]){
       answer1.innerHTML = a.choice1[0];
@@ -126,21 +134,23 @@ function fifty(){
     fiftybtn.disabled=true;
     ;
 }
+//function for phone a friend
 function friend(){
-    
+    c = questionArr[currentQuestion];
+    x = a.correctAnswer[1];
     r = Math.floor(Math.random()*(0,2));
     console.log(r);
     if(r<=1){
       Swal.fire({
         title: "Phoning Friend",
-        text: "Could be anything mate"
+        text: "Oh I know nothing about gardening sorry."
 
       })
     }
     if(r>=1){
       Swal.fire({
         title: "Phoning Friend",
-        text: "notusre"
+        text: "Its definately "+ x +" 100%",
 
       })
     }
@@ -179,7 +189,7 @@ let questionArr = [
     choice2 :["Erigeron","b"],
     choice3 :["Osmanthus","c"],
     choice4 :["Anenome","d"],
-    correctAnswer :"d",
+    correctAnswer :["d","Anenome"],
    
 
   },
@@ -189,7 +199,7 @@ let questionArr = [
     choice2 :["Erigeron","b"],
     choice3 :["Osmanthus","c"],
     choice4 :["Anenome","d"],
-    correctAnswer :"c",
+    correctAnswer :["c","Osmanthus"],
   },
   {
     question : "assets/img/erigeron.jpg",
@@ -197,7 +207,7 @@ let questionArr = [
     choice2 :["Erigeron","b"],
     choice3 :["Osmanthus","c"],
     choice4 :["Anenome","d"],
-    correctAnswer:"b",
+    correctAnswer:["b","Erigeron"],
 },
 ]
 
