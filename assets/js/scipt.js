@@ -27,6 +27,11 @@ function loadNextQ(){
     
     endGame();
   }else{
+    answer1.style.display ="block";
+    answer2.style.display ="block";
+    answer3.style.display ="block";
+    answer4.style.display ="block";
+  
   getNextQuestion();
 }
 }
@@ -88,30 +93,30 @@ function fifty(){
     if(x == a.choice1[1]){
       answer1.innerHTML = a.choice1[0];
       answer2.innerHTML = a.choice2[0];
-      answer3.innerHTML = "";
-      answer4.innerHTML = "";
+      answer3.style.display ="none";
+      answer4.style.display ="none";
       
       
     }
     if(x == a.choice2[1]){
-      answer1.innerHTML = "";
+      answer1.style.display ="none";
       answer2.innerHTML = a.choice2[0];
       answer3.innerHTML = a.choice3[0];
-      answer4.innerHTML = "";
+      answer4.style.display ="none";
       
     }
     if(x == a.choice3[1]){
-      answer1.innerHTML = "";
-      answer2.innerHTML = "";
+      answer1.style.display ="none";
+      answer2.style.display ="none";
       answer3.innerHTML = a.choice3[0];
       answer4.innerHTML = a.choice4[0];
       
       
     }
     if(x == a.choice4[1]){
-      answer1.innerHTML = "";
+      answer1.style.display ="none";
       answer2.innerHTML = a.choice2[0];
-      answer3.innerHTML = "";
+      answer3.style.display ="none";
       answer4.innerHTML = a.choice4[0];
       
     }
