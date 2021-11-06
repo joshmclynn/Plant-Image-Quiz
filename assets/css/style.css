@@ -1,6 +1,6 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
-    height: 791px;px;
+    
 }
 body {
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -19,7 +19,7 @@ body {
     display:grid;
     grid-template-columns: 100%;
     grid-template-rows: 50%,25%,25%;
-    height:700px;
+    height:650px;
     background-color: #d8e8dc;
    
     
@@ -33,6 +33,7 @@ body {
     
 
 }
+
 #imageQuestion{
     grid-area: imageQuestion;
     
