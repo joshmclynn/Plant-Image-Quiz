@@ -9,10 +9,12 @@ const answer3 = document.getElementById("answer3");
 const answer4 = document.getElementById("answer4");
 const score = document.getElementById("score");
 const end = document.getElementById("end");
-const endGamebtn = document.getElementById("endGame");
+const endGamebtn = document.getElementById("reset");
 const welcome = document.getElementById("welcome");
 const friendbtn = document.getElementById("friend");
-const fiftybtn = document.getElementById("fiftyfifty")
+const fiftybtn = document.getElementById("fiftyfifty");
+const onloadscrn = document.getElementById("onload");
+const expertbtn = document.getElementById("expert");
 let currentScore = 0;
 let  currentQuestion = 0;
 
@@ -67,7 +69,7 @@ function userChoice(answer){
     currentScore = currentScore+1;
     correctAnswer();
     updateScore();
-    loadNextQ();
+    
    
      
     
@@ -76,7 +78,7 @@ function userChoice(answer){
   else{
     console.log("wrong");
     incorrectAnswer();
-    loadNextQ();
+    
 
   }
   
@@ -84,18 +86,22 @@ function userChoice(answer){
     
 }
 function correctAnswer(){
+  //sweetAlert2
   Swal.fire({
     icon: 'success',
     title: 'Correct!',
     
   })
+  loadNextQ();
 }
 function incorrectAnswer(){
+  //sweetAlert2
   Swal.fire({
     icon: 'error',
     title: 'Incorrect',
     
   })
+  loadNextQ();
 }
 //fifty fifty chance function
 function fifty(){
@@ -141,6 +147,7 @@ function friend(){
     r = Math.floor(Math.random()*(0,2));
     console.log(r);
     if(r<=1){
+      //sweetAlert2
       Swal.fire({
         title: "Phoning Friend",
         text: "Oh I know nothing about gardening sorry."
@@ -148,6 +155,7 @@ function friend(){
       })
     }
     if(r>=1){
+      //sweetAlert2
       Swal.fire({
         title: "Phoning Friend",
         text: "Its definately "+ x +" 100%",
@@ -158,7 +166,17 @@ function friend(){
     
 }
 
+function askExpert(){
+    x = a.correctAnswer[1];
+    //sweetAlert
+    Swal.fire({
+      title: "Expert Theo",
+      text: "I think its a yew?",
 
+    })
+    expertbtn.disbled=true;
+    
+}
 function updateScore(){
   score.innerHTML = currentScore;
 }
@@ -166,9 +184,16 @@ function updateScore(){
  */
 function endGame(){
   game.style.display = "none";
-  end.style.display = "block";
-  end.innerHTML = currentScore;
   
+  end.innerHTML = currentScore;
+  if(currentScore >=2){
+    Swal.fire({
+      
+      title: 'Nice One',
+      text: 'You scored '+currentScore+' !'
+      
+    })
+  }
   
   console.log("endgame")
   endGamebtn.style.display="block";
@@ -217,11 +242,12 @@ let questionArr = [
 start.addEventListener('click',newGame);
 function newGame(){
     
-  start.style.display = "none";
-  welcome.style.display = "none";
+  onloadscrn.style.display = "none";
+  
   game.style.display = "grid";
   friendbtn.disabled=false;
   fifty.disabled=false;
+  expertbtn.disbled=false;
   currentQuestion = 0;
 
  
