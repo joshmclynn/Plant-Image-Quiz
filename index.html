@@ -10,16 +10,11 @@
 
     <body>
         <header id= "head">
-            <h1>Plant Identification Game</h1>
+            <img src="assets/img/GameTitle.png" alt="Plant based quiz title">
         </header>
+        <div id = "background">
+        <!--What the user sees on loading the page-->
         <div id = "onload">
-            
-            <div id="start">
-                <button id="startQuiz">
-                    Start
-                </button>
-            </div>
-            
             <div id = "welcome">
                 <h2>Welcome</h2>
                 <p>Try your hand at guessing these plants from the pictures provided</p>
@@ -27,6 +22,11 @@
             <div id = "instruction">
                 <button id = "instructionbtn" onclick="instruction()">
                     Instructions
+                </button>
+            </div>
+            <div id="start">
+                <button id="startQuiz">
+                    Start
                 </button>
             </div>
         </div>
@@ -39,7 +39,7 @@
                     Home
                 </button>
             </div>
-        
+        <!--This div holds the game which will be displayed once the user selects the start button-->
         <div id="game" style="display:none">
             
             
@@ -59,7 +59,7 @@
             <div id="sidebar">
                 
                 <div id="help">
-                    <h3 id="lifelines">LifeLines</h3>
+                    <h3 id="lifelines">LIFELINES</h3>
                     <button id="friend" onclick = "friend()">
                         Phone a friend
                     </button>
@@ -72,7 +72,8 @@
                 </div>
                 <div id="score">0</div>
             </div>
-        </div>   
+        </div>
+    </div>   
         <script src="assets/js/scipt.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
         

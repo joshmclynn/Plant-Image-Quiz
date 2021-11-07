@@ -13,7 +13,7 @@ const friendbtn = document.getElementById("friend");
 const fiftybtn = document.getElementById("fiftyfifty");
 const onloadscrn = document.getElementById("onload");
 const expertbtn = document.getElementById("expert");
-const instructbtn = document.getElementById("instructionbtn")
+const instructbtn = document.getElementById("instructionbtn");
 let currentScore = 0;
 let  currentQuestion = 0;
 
@@ -136,7 +136,7 @@ function fifty(){
       answer4.innerHTML = a.choice4[0];
       
     }
-    fiftybtn.disabled=true;
+    fiftybtn.style.display="none";
     ;
 }
 //function for phone a friend
@@ -161,7 +161,7 @@ function friend(){
 
       })
     }
-    friendbtn.disabled=true;
+    friendbtn.style.display="none";
     
 }
 
@@ -170,10 +170,10 @@ function askExpert(){
     //sweetAlert
     Swal.fire({
       title: "Expert Theo",
-      text: "I think its a yew?",
+      text: "I have seen these alot, its a "+x+"",
 
     })
-    expertbtn.disabled=true;
+    expertbtn.style.display="none";
     
 }
 function updateScore(){
@@ -183,7 +183,7 @@ function instruction(){
   Swal.fire({
       
     title: 'The Rules',
-    text: 'In this quiz you will get four choices where one will be the name of the plant in the picture, use the lifelines in order to gain an advantage.'
+    text: 'In this quiz you will get four choices where one will be the name of the plant in the picture, use the lifelines in order to gain an advantage, but be careful you can only use them once.'
     
           
     
