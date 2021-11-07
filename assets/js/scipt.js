@@ -30,8 +30,7 @@ function loadNextQ(){
     
     endGame();
   }
-  if(incorrectCount ==3){
-    endGame();}
+  
   else{
     answer1.style.display ="block";
     answer2.style.display ="block";
@@ -199,14 +198,24 @@ function endGame(){
   game.style.display = "none";
   
   end.innerHTML = currentScore;
-  if(currentScore >=2){
+  if(currentScore >=6){
     Swal.fire({
       
-      title: 'Nice One',
-      text: 'You scored '+currentScore+' !'
+      title: 'Well Done',
+      text: 'You scored '+currentScore+' out of '+questionArr.length+' !'
       
     })
   }
+  if(currentScore <=5){
+    Swal.fire({
+      
+      title: 'Better Luck Next Time',
+      text: 'You scored '+currentScore+' out of '+questionArr.length+' !'
+      
+    })
+  }
+  
+
   
   console.log("endgame")
   endGamebtn.style.display="block";
