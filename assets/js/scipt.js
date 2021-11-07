@@ -16,7 +16,7 @@ const expertbtn = document.getElementById("expert");
 const instructbtn = document.getElementById("instructionbtn");
 let currentScore = 0;
 let  currentQuestion = 0;
-
+let incorrectCount = 0;
 
 
 
@@ -29,7 +29,10 @@ function loadNextQ(){
   if(currentQuestion>=questionArr.length){
     
     endGame();
-  }else{
+  }
+  if(incorrectCount ==3){
+    endGame();}
+  else{
     answer1.style.display ="block";
     answer2.style.display ="block";
     answer3.style.display ="block";
@@ -44,7 +47,7 @@ function loadNextQ(){
 //creates question and loads answers onto buttons x 4
 function getNextQuestion(){
     
-  
+
     a = questionArr[currentQuestion];
       questioncon.innerHTML = "<img src =" + a.question +">";
       answer1.innerHTML = a.choice1[0];
@@ -100,6 +103,7 @@ function incorrectAnswer(){
     title: 'Incorrect',
     
   })
+  incorrectCount+1;
   loadNextQ();
 }
 //fifty fifty chance function
@@ -183,7 +187,7 @@ function instruction(){
   Swal.fire({
       
     title: 'The Rules',
-    text: 'In this quiz you will get four choices where one will be the name of the plant in the picture, use the lifelines in order to gain an advantage, but be careful you can only use them once.'
+    text: 'In this quiz you will get four choices where one will be the name of the plant in the picture, use the lifelines in order to gain an advantage, but be careful you can only use.'
     
           
     
@@ -243,6 +247,62 @@ let questionArr = [
     choice4 :["Anenome","d"],
     correctAnswer:["b","Erigeron"],
 },
+{
+question : "assets/img/caryopteris.jpg",
+choice1 :["Caryopteris","a"],
+choice2 :["Viburnum","b"],
+choice3 :["Skimmia","c"],
+choice4 :["Ilex","d"],
+correctAnswer:["a","Caryopteris"],
+},
+{
+  question : "assets/img/dodonaea.jpg",
+    choice1 :["Buxus","a"],
+    choice2 :["Prunus","b"],
+    choice3 :["Dodonaea","c"],
+    choice4 :["Anenome","d"],
+    correctAnswer:["c","Dodonaea"],
+},
+{
+question : "assets/img/persicaria.jpg",
+    choice1 :["Lavender","a"],
+    choice2 :["Verbena","b"],
+    choice3 :["Persicaria","c"],
+    choice4 :["Geranium","d"],
+    correctAnswer:["c","Persicaria"],
+},
+{
+  question : "assets/img/eupatorium.jpg",
+    choice1 :["Buxus","a"],
+    choice2 :["Persicaria","b"],
+    choice3 :["Geranium","c"],
+    choice4 :["Eupatorium","d"],
+    correctAnswer:["d","Eupatorium"],
+},
+{
+  question : "assets/img/melianthus.jpg",
+    choice1 :["Sunflower","a"],
+    choice2 :["Melianthus","b"],
+    choice3 :["Erigeron","c"],
+    choice4 :["Anenome","d"],
+    correctAnswer:["b","Melianthus"],
+},
+{
+  question : "assets/img/prunus.jpg",
+    choice1 :["Taxus","a"],
+    choice2 :["Viburnum","b"],
+    choice3 :["Prunus","c"],
+    choice4 :["Anenome","d"],
+    correctAnswer:["c","Prunus"],
+},
+{
+  question : "assets/img/ribesSanguineum.jpg",
+    choice1 :["Ribes-Sanguineum","a"],
+    choice2 :["Erigeron","b"],
+    choice3 :["Prunus","c"],
+    choice4 :["Geranium","d"],
+    correctAnswer:["b","Erigeron"],
+}
 ]
 
 
