@@ -152,7 +152,7 @@ function friend(){
       //sweetAlert2
       Swal.fire({
         title: "Phoning Friend",
-        text: "Oh I know nothing about gardening sorry."
+        text: "Oh sorry, I know nothing about gardening."
 
       })
     }
@@ -186,7 +186,7 @@ function instruction(){
   Swal.fire({
       
     title: 'The Rules',
-    text: 'In this quiz you will get four choices where one will be the name of the plant in the picture, use the lifelines in order to gain an advantage, but be careful you can only use.'
+    text: 'In this quiz you will get four choices where one will be the name of the plant in the picture, use the lifelines in order to gain an advantage, but be careful you can only use them once.'
     
           
     
@@ -235,8 +235,8 @@ let questionArr = [
     choice1 :["Sunflower","a"],
     choice2 :["Erigeron","b"],
     choice3 :["Osmanthus","c"],
-    choice4 :["Anenome","d"],
-    correctAnswer :["d","Anenome"],
+    choice4 :["Geranium","d"],
+    correctAnswer :["d","Geranium"],
    
 
   },
