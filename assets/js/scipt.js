@@ -67,7 +67,7 @@ function userChoice(answer){
   
   
   if(answer === questionArr[currentQuestion].correctAnswer[0]){
-    currentScore = currentScore+1;
+    
     correctAnswer();
     updateScore();
     
@@ -93,6 +93,7 @@ function correctAnswer(){
     title: 'Correct!',
     
   })
+  currentScore = currentScore+1;
   loadNextQ();
 }
 function incorrectAnswer(){
@@ -197,7 +198,7 @@ function instruction(){
 function endGame(){
   game.style.display = "none";
   
-  end.innerHTML = currentScore;
+  end.innerHTML = "Your Scored "+(currentScore)+" you can always try again if you would like!";
   if(currentScore >=6){
     Swal.fire({
       
@@ -219,6 +220,7 @@ function endGame(){
   
   console.log("endgame")
   endGamebtn.style.display="block";
+  end.style.display="block";
 }
 function reset(){
   currentScore = 0;
@@ -310,7 +312,7 @@ question : "assets/img/persicaria.jpg",
     choice2 :["Erigeron","b"],
     choice3 :["Prunus","c"],
     choice4 :["Geranium","d"],
-    correctAnswer:["b","Erigeron"],
+    correctAnswer:["a","Ribes-Sanguineum"],
 }
 ]
 
