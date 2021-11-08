@@ -1,281 +1,252 @@
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
-    
-    
 }
+
 /*Mobile first 375px*/
 body {
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
-    
-  
-  }
-#background{
-    background-image: url(../img/Background.png);
-
-  
-    
-
-  height:42rem;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    font-family:  Helvetica, Arial, sans-serif;
+    margin: 3px;
 }
 
-
-
-#head>img{
-    width:22.5rem;
-    height:6rem;
+#background {
+    background-image: url(../img/background.png);
+    height: 42rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#onload{
-    height:650px;
-    display:grid;
+#head>img {
+    width: 23rem;
+    height: 6rem;
+}
+
+#onload {
+    height: 48rem;
+    display: grid;
     grid-template-columns: 100%;
-    
-    
-    
-   
 }
-#welcome{
+
+#welcome {
     text-align: center;
-
 }
 
-#game{
-    
-    display:grid;
+#game {
+    display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50%,25%,25%;
-    height:650px;
-   
-   
-    
-    grid-template-areas: 
-    "imageQuestion"
-    "answers"
-    "sidebar"
-    
+    grid-template-rows: 50%, 25%, 25%;
+    height: 42rem;
+    grid-template-areas:
+        "imageQuestion"
+        "answers"
+        "sidebar"
     ;
-
-    
-
 }
 
-#imageQuestion{
+#imageQuestion {
     grid-area: imageQuestion;
-    margin-top:20px;
-    
-    
+    margin-top: 1rem;
 }
-#imageQuestion>img{
-    height:350px;
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
+
+#imageQuestion>img {
+    height: 23rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
-#sidebar{
+
+#sidebar {
     grid-area: sidebar;
-    display:grid;
+    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50%;
     text-align: center;
-    
 }
 
-
-#answers{
+#answers {
     grid-area: answers;
-    display:grid;
+    display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50%;
-    grid-area: 
-    "1 2"
-    "3 4";
+    grid-area:
+        "1 2"
+        "3 4";
 }
 
-#lifelines{
+#lifelines {
     background-color: #9fe3b1;
     font-size: 1.5rem;
-    width:100%;
-}
-#score{
-    margin-top:30px;
+    width: 100%;
 }
 
 
 
-.answbtn{
-display:inline-block;
-padding:0.3em 1.2em;
-margin:0 0.1em 0.1em 0;
-border:0.16em solid rgba(255,255,255,0);
-border-radius:2em;
-box-sizing: border-box;
-text-decoration:none;
-font-family:'Roboto',sans-serif;
-font-weight:300;
-text-transform: uppercase;
-background-color: #9fe3b1;
-text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-text-align:center;
-transition: all 0.2s;
-    }
-.answbtn:hover{
-    text-shadow: 0 0 2em rgba(255,255,255,1);
-    color:#000000;
-    border-color:#32b459;
-        }   
-
-#help>button{
-    
-    
-    border:0.1em solid #000000;
-    margin:0 0.2em 0.2em 0;
-    border-radius:0.12em;
+.answbtn {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgba(255, 255, 255, 0);
+    border-radius: 2em;
     box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#000000;
-    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-    background-color:#32b459;
-    text-align:center;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: #9fe3b1;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.answbtn:hover {
+    text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+    color: #000000;
+    border-color: #32b459;
+}
+
+#help>button {
+    border: 0.1em solid #000000;
+    margin: 0 0.2em 0.2em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    background-color: #32b459;
+    text-align: center;
     transition: all 0.15s;
-    padding:10px;
-    }
-#onload>button{
-    display:inline-block;
-    padding:0.5em 3em;
-    border:0.16em solid #FFFFFF;
-    margin:0 0.3em 0.3em 0;
+    padding: 10px;
+}
+
+#onload>button {
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
     box-sizing: border-box;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-family:'Roboto',sans-serif;
-    font-weight:400;
-    color:#FFFFFF;
-    text-align:center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
     transition: all 0.15s;
-    }
-#onload>button:hover{
-    color:#DDDDDD;
-    border-color:#DDDDDD;
-    }
-#onload>button:active{
-    color:#BBBBBB;
-    border-color:#BBBBBB;
-    }
-#instructionbtn{
-    width:100%;
-    height:110px;
-    display:inline-block;
-    
-    border:0.16em solid #FFFFFF;
-    
-    box-sizing: border-box;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-family:'Roboto',sans-serif;
-    font-weight:600;
-    color:black;
-    text-align:center;
-    font-size:20px;
-    
-    
-    
-
-}
-#startQuiz{
-    width:100%;
-    height:110px;
-    display:inline-block;
-    
-    border:0.16em solid #FFFFFF;
-    
-    box-sizing: border-box;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-family:'Roboto',sans-serif;
-    font-weight:600;
-    color:black;
-    text-align:center;
-    font-size:20px;
-    
-}
-#reset{
-    height:650px;
-
 }
 
-#home{
-    width:100%;
-    height:110px;
-    display:inline-block;
-    
-    border:0.16em solid #FFFFFF;
-    
-    box-sizing: border-box;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-family:'Roboto',sans-serif;
-    font-weight:600;
-    color:black;
-    text-align:center;
-    font-size:20px; 
-    margin-top: 400px;
+#onload>button:hover {
+    color: #DDDDDD;
+    border-color: #DDDDDD;
 }
-#end{
-    font-size: 25px;
+
+#onload>button:active {
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+#instructionbtn {
+    width: 100%;
+    height: 6rem;
+    display: inline-block;
+    border: 0.16em solid #FFFFFF;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#startQuiz {
+    width: 100%;
+    height: 6rem;
+    display: inline-block;
+    border: 0.16em solid #FFFFFF;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#reset {
+    height: 650px;
+}
+
+#home {
+    width: 100%;
+    height: 6rem;
+    display: inline-block;
+    border: 0.16em solid #FFFFFF;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 24rem;
+}
+
+#end {
+    font-size: 1.5rem;
     text-align: center;
 }
-footer{
+
+footer {
     text-align: center;
 }
+
 /*desktop*/
-@media only screen and (min-width:1351px){
-    #head>img{
-        margin-left:26rem;
-        height:8rem;
-        width:50rem;
+@media only screen and (min-width:1351px) {
+    #head>img {
+        margin-left: 26rem;
+        height: 8rem;
+        width: 50rem;
     }
-    
 }
+
 /*larger laptop up to 1350px*/
-@media only screen and (min-width:1101px) and (max-width:1350px){
-    #head>img{
-        width:50rem;
-        height:8rem;
-        margin-left:15rem;
+@media only screen and (min-width:1101px) and (max-width:1350px) {
+    #head>img {
+        width: 50rem;
+        height: 8rem;
+        margin-left: 15rem;
     }
-    
 }
+
 /*normal laptop 1000px*/
-@media only screen and (min-width:950px) and (max-width:1100px){
-    #head>img{
-        width:50rem;
-        height:8rem;
-        margin-left:20rem;
+@media only screen and (min-width:950px) and (max-width:1100px) {
+    #head>img {
+        width: 50rem;
+        height: 8rem;
+        margin-left: 20rem;
     }
-    
 }
+
 /*Tablet etc*/
-@media only screen and (min-width:600px) and (max-width:949px){
-    #head>img{
-        width:47rem;
-        height:8rem;
-        
+@media only screen and (min-width:600px) and (max-width:949px) {
+    #head>img {
+        width: 47rem;
+        height: 8rem;
+
     }
-    
 }
-@media only screen and (max-width:340px){
-    #head>img{
-        width:19rem;
-        height:4rem;
+
+@media only screen and (max-width:340px) {
+    #head>img {
+        width: 19rem;
+        height: 4rem;
     }
-    #onload{
-        height:450px;
+    #onload {
+        height: 450px;
     }
 }
