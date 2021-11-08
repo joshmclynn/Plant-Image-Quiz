@@ -29,13 +29,20 @@ body {
     width:22.5rem;
     height:6rem;
 }
+
 #onload{
     height:650px;
     display:grid;
     grid-template-columns: 100%;
     
+    
+    
    
 }
+#welcome{
+    text-align: center;
+}
+
 #game{
     
     display:grid;

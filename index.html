@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--Head-->
     <head>
         <meta charset="UTF-8">
         <meta name= "viewport" content="width=device-width, initial-scale=1.0">
-        
+        <!--Link to Stylesheet-->
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Plant-Quiz</title>
     </head>
-
+    <!--Body-->
     <body>
         <header id= "head">
             <img src="assets/img/GameTitle.png" alt="Plant based quiz title">
@@ -15,49 +16,39 @@
         <div id = "background">
         <!--What the user sees on loading the page-->
         <div id = "onload">
+            <!--Container for welcome text-->
             <div id = "welcome">
                 <h2>Welcome</h2>
-                <p>Try your hand at guessing these plants from the pictures provided</p>
+                <p id=welcomeText>Try your hand at guessing these plants from the pictures provided</p>
             </div>
+            <!--Container for button for instructions pop up-->
             <div id = "instruction">
                 <button id = "instructionbtn" onclick="instruction()">
                     Instructions
                 </button>
             </div>
+            <!--Container for start quiz button-->
             <div id="start">
                 <button id="startQuiz">
                     Start
                 </button>
             </div>
         </div>
-        
-            <div id= "end" style= "display:none" >
-               <p>Thankyou for playing, you can start the quiz again on the home page</p>
-            </div>
-            <div id = "reset" style="display:none">
-                <button id="home" onclick = "reset()">
-                    Home
-                </button>
-            </div>
         <!--This div holds the game which will be displayed once the user selects the start button-->
         <div id="game" style="display:none">
-            
-            
-            
+            <!--Image Holder for Questions-->
             <div id="imageQuestion">
-               
             </div>
-            
+            <!--Container for Answer Buttons-->
             <div id="answers">
-                
                 <button id="answer1" class = "answbtn" onclick="userChoice('a')"></button>
                 <button id="answer2" class = "answbtn" onclick="userChoice('b')"></button>
                 <button id="answer3" class = "answbtn" onclick="userChoice('c')"></button>
                 <button id="answer4" class = "answbtn" onclick="userChoice('d')"></button>
-                
             </div>
+            <!--Container for Extra help features and Score-->
             <div id="sidebar">
-                
+                <!--Container for the three "lifelines"-->
                 <div id="help">
                     <h3 id="lifelines">LIFELINES</h3>
                     <button id="friend" onclick = "friend()">
@@ -70,12 +61,26 @@
                         Ask an expert
                     </button>
                 </div>
+                <!--Container for the score counter-->
                 <div id="score">0</div>
             </div>
+            <!--Container to be shown after quiz has ended-->
+            <div id= "end" style= "display:none" >
+                <p>Thankyou for playing, you can start the quiz again on the home page</p>
+            </div>
+            <div id = "reset" style="display:none">
+                <button id="home" onclick = "reset()">
+                    Try Again
+                </button>
+            </div>
         </div>
-    </div>   
-        <script src="assets/js/scipt.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
-        
+    </div>
+    <!--Footer-->
+    <footer>
+        &copy; Copyright 2021 Josh Mclynn
+    </footer>
+    <!--Script sources-->   
+    <script src="assets/js/scipt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
     </body>
 </html>
