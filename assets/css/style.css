@@ -234,12 +234,21 @@ transition: all 0.2s;
 footer{
     text-align: center;
 }
-/*larger laptop1440px*/
-@media only screen and (min-width:1101px) and (max-width:1700px){
+/*desktop*/
+@media only screen and (min-width:1351px){
+    #head>img{
+        margin-left:26rem;
+        height:8rem;
+        width:50rem;
+    }
+    
+}
+/*larger laptop up to 1350px*/
+@media only screen and (min-width:1101px) and (max-width:1350px){
     #head>img{
         width:50rem;
         height:8rem;
-        margin-left:20rem;
+        margin-left:15rem;
     }
     
 }
@@ -248,7 +257,7 @@ footer{
     #head>img{
         width:50rem;
         height:8rem;
-        margin-left:6rem;
+        margin-left:20rem;
     }
     
 }
@@ -260,4 +269,13 @@ footer{
         
     }
     
+}
+@media only screen and (max-width:340px){
+    #head>img{
+        width:19rem;
+        height:4rem;
+    }
+    #onload{
+        height:450px;
+    }
 }
