@@ -132,7 +132,7 @@ Below are the technologies used in the building of this website.
          * (1351 and above) Desktop
       * Although initially designed for an average mobile phone size, the site scales all the way up to desktop using media queries
 ## Known Bugs
-     * Currently none
+   * Currently none
 ## Deployment
    * The site was deployed to GitHub pages. The steps to deploy are below
       - In the github repository, navigate to the settings tab.
