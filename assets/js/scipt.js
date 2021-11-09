@@ -5,7 +5,6 @@ const answer1 = document.getElementById("answer1");
 const answer2 = document.getElementById("answer2");
 const answer3 = document.getElementById("answer3");
 const answer4 = document.getElementById("answer4");
-const score = document.getElementById("score");
 const end = document.getElementById("end");
 const endGamebtn = document.getElementById("reset");
 const welcome = document.getElementById("welcome");
