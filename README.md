@@ -46,13 +46,13 @@ The targeted user is someone interested in Gardening and Horticulture.
   * Be engaging, encouraging users to return and try the quiz again.
 ### Design Choices
 #### Font
-Whilst designing the quiz I found that I preferef to keep the fonts simple in order to allow for a minimilist feel and create familiarity with the users, which is why I chose to use "helvetica".
+Whilst designing the quiz I found that I preferef to keep the fonts simple in order to allow for a minimilist feel and create familiarity with the users, which is why I chose to use "helvetica". I also felt it important that the font be very legible and easy to read. 
 #### Color Scheme
-Being a game based around gardening, I thought it important to keep to different shades of green throughout with buttons being two different shades of green creating a relaxing and "green" enviroment. 
+Being a game based around gardening and nature, I thought it important to keep to different shades of green throughout with buttons being two different shades of green creating a relaxing and "green" enviroment.  
    * Answer buttons : #9fe3b1
    * LifeLine buttons : #32b459
 #### Back-grounds
-The background of the website is a custom image creating using adobe photoshop, Intended to mimic a silhouetted flower bed keeping within the theme of "green" it only contains two shades of green.  
+The background of the website is a custom image creating using adobe photoshop, Intended to mimic a silhouetted flower bed keeping within the theme of "green" it only contains two shades of green to maintain simplicity and a flowing and calming experience for the user.  
 ![Background image](/docs/screen-shots/background.PNG "Background used in site")
 ## Features
 ### Header Element
@@ -88,39 +88,41 @@ Below are the technologies used in the building of this website.
 ### Languages
    * HTML
    * CSS
-   * Javascript
+   * [Javascript](https://www.javascript.com/)
 ### Applications
-   * Adobe Photoshop
+   * [Adobe PhotoShop](https://www.adobe.com/uk/products/photoshop/landpa.html?mv=search&mv=search&sdid=LZ32SYVR&ef_id=CjwKCAiA1aiMBhAUEiwACw25MUuY8NucftlY12uOIjD5OjdYznWM2nRJbA9QDsqv_iM79SZVB36vuRoChl4QAvD_BwE:G:s&s_kwcid=AL!3085!3!340669891887!e!!g!!adobe%20photoshop!1422700211!58647953511&gclid=CjwKCAiA1aiMBhAUEiwACw25MUuY8NucftlY12uOIjD5OjdYznWM2nRJbA9QDsqv_iM79SZVB36vuRoChl4QAvD_BwE)
 ### Libraries
    * [Sweet Alerts 2](https://sweetalert2.github.io/#examples)
 ## Testing
    * ### Browsers and Devices
-      * The site has been tested on a variety of android phones including: 
-        * samsung
-        * Google
-        * Huaweii
-     * The site has been tested on a variety of apple products including:
-        * Apple Iphone 8 and 11
-        * Apple Ipad(Safari)
-        * Apple MacbookAir (Chrome + Safari)
-     * The site has been tested on laptops including:
-        * Microsoft surface PRO
-     * Browsers the site has been tested on inlucde:
-        * Edge
-        * Chrome
-        * Safari
-        * Samsung Internet
-   * ### Issues and Resolutions
-     * When adding a back-ground image through css it would work locally, but wouldnt work when commited to git-hub and displayed on git-pages, Unknown as to the reasoning why as the same code was uploaded fairly soon after with minimal changes and it would work.
-     * When passing the Javascript through [JSHINT](https://jshint.com/) it would return messages over unsused variables, I could get rid of this by declaring the variables as blank but decided it wasnt needed in this instant.
-   * ### Validators
+   When Testing on mobile phones including apple mobiles I asked a variety of friends and family to try the quiz and ask for there feedback not only on whether there was any faults but if the screen size was correct and that there wasnt any overlap, this gave me a broad range of data to work of, from average screen size, to browsers used.
+   When testing on laptops I opened the file on various platforms and performed all the actions which a potential user would do, Including playing the quiz, and repeatedly   spamming buttons etc. Whilst testing on browsers I also minimized and maximised browser the browser sizes to make sure the site didnt crash.
+* The site has been tested on a variety of android phones including: 
+     * samsung
+     * Google
+     * Huaweii
+* The site has been tested on a variety of apple products including:
+     * Apple Iphone 8 and 11
+     * Apple Ipad(Safari)
+     * Apple MacbookAir (Chrome + Safari)
+* The site has been tested on laptops including:
+     * Microsoft surface PRO
+* Browsers the site has been tested on inlucde:
+     * Edge
+     * Chrome
+     * Safari
+     * Samsung Internet
+ * ### Issues and Resolutions
+     * When adding a back-ground image through css it would work locally, but wouldnt work when commited to git-hub and displayed on git-pages, Unknown as to the reasoning why          as the same code was uploaded fairly soon after with minimal changes and it would work.
+     * When passing the Javascript through [JSHINT](https://jshint.com/) it would return messages over unsused variables, I could get rid of this by declaring the variables as          blank but decided it wasnt needed in this instant.
+ * ### Validators
      * #### HTML   
      ![HTML Validator W3](/docs/screen-shots/htmlvali.PNG "HTML VALIDATOR")
      * #### CSS  
      ![CSS VALIDATOR JIGSAW](/docs/screen-shots/cssvali.PNG "CSS VALIDATOR")
-   * ### Lighthouse  
+ * ### Lighthouse  
      ![Lighthouse](/docs/screen-shots/lighthous.PNG "LIGHTHOUSE CHECK")
-   * ### Responsiveness
+ * ### Responsiveness
      * Current media queries at:
          * (340px and below)Small Phone
          * (Designed at 375px)Average Phone
@@ -130,7 +132,7 @@ Below are the technologies used in the building of this website.
          * (1351 and above) Desktop
       * Although initially designed for an average mobile phone size, the site scales all the way up to desktop using media queries
 ## Known Bugs
-     * Currently none
+   * Currently none
 ## Deployment
    * The site was deployed to GitHub pages. The steps to deploy are below
       - In the github repository, navigate to the settings tab.
