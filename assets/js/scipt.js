@@ -53,7 +53,6 @@ function userChoice(answer) {
   if (answer === questionArr[currentQuestion].correctAnswer[0]) {
     correctAnswer();
   } else {
-    console.log("wrong");
     incorrectAnswer();
   }
 }
@@ -129,7 +128,6 @@ function friend() {
   c = questionArr[currentQuestion];
   x = a.correctAnswer[1];
   r = Math.floor(Math.random() * (0, 2));
-  console.log(r);
   
   if (r <= 1) {
     Swal.fire({

@@ -78,7 +78,6 @@ section{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50%;
-    
 }
 
 /*container for lifelines section*/
@@ -219,7 +218,7 @@ footer {
 /*desktop*/
 @media only screen and (min-width:1351px) {
     #head>img {
-        margin-left: 26rem;
+        margin-left: 21rem;
         height: 8rem;
         width: 50rem;
     }
@@ -242,21 +241,25 @@ footer {
     #head>img {
         width: 50rem;
         height: 8rem;
-        margin-left: 12rem;
+        margin-left: 7rem;
     }
-    #section{
-        width:70rem;
+    section{
+        width:61.5rem;
     }
 }
 
 /*Tablet etc*/
 @media only screen and (min-width:600px) and (max-width:949px) {
     #head>img {
-        width: 47.5rem;
+        width: 46rem;
         height: 8rem;
 
     }
+    section{
+        width:46rem;
+    }
 }
+
 /*small Mobile phone 340px and below*/
 @media only screen and (max-width:340px) {
     #head>img {
@@ -267,5 +270,4 @@ footer {
     #onload{
         height:24rem;
     }
-    
 }
