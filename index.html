@@ -12,91 +12,94 @@
 </head>
 
 <!--Body-->
+
 <body>
     <!--Header for page-->
     <header id="head">
         <img src="assets/img/game-title.png" alt="Plant based quiz title">
     </header>
+    <section>
+        <div id="background">
+            <!--What the user sees on loading the page-->
+            <div id="onload">
 
-    <div id="background">
-        <!--What the user sees on loading the page-->
-        <div id="onload">
+                <!--Container for welcome text-->
+                <div id="welcome">
+                    <h2>Welcome</h2>
+                    <p id=welcomeText>Try your hand at guessing these plants from the pictures provided</p>
+                </div>
 
-            <!--Container for welcome text-->
-            <div id="welcome">
-                <h2>Welcome</h2>
-                <p id=welcomeText>Try your hand at guessing these plants from the pictures provided</p>
-            </div>
+                <!--Container for button for instructions pop up-->
+                <div id="instruction">
+                    <button id="instructionbtn" onclick="instruction()">
+                        Instructions
+                    </button>
+                </div>
 
-            <!--Container for button for instructions pop up-->
-            <div id="instruction">
-                <button id="instructionbtn" onclick="instruction()">
-                    Instructions
-                </button>
-            </div>
+                <!--Container for start quiz button-->
+                <div id="start">
+                    <button id="startQuiz">
+                        Start
+                    </button>
+                </div>
 
-            <!--Container for start quiz button-->
-            <div id="start">
-                <button id="startQuiz">
-                    Start
-                </button>
-            </div>
-
-        </div>
-
-        <!--Container to be shown after quiz has ended-->
-        <div id="end" style="display:none">
-        </div>
-
-        <div id="reset" style="display:none">
-            <button id="home" onclick="reset()">
-                Try Again
-            </button>
-        </div>
-
-        <!--This div holds the game which will be displayed once the user selects the start button-->
-        <div id="game" style="display:none">
-
-            <!--Image Holder for Questions-->
-            <div id="imageQuestion">
-            </div>
-
-            <!--Container for Answer Buttons-->
-            <div id="answers">
-                <button id="answer1" class="answbtn" onclick="userChoice('a')"></button>
-                <button id="answer2" class="answbtn" onclick="userChoice('b')"></button>
-                <button id="answer3" class="answbtn" onclick="userChoice('c')"></button>
-                <button id="answer4" class="answbtn" onclick="userChoice('d')"></button>
-            </div>
-
-            <!--Container for the three "lifelines" buttons-->
-            <div id="help">
-                <h3 id="lifelines">LIFELINES</h3>
-                <button id="friend" onclick="friend()">
-                    Phone a friend
-                </button>
-                <button id="fiftyfifty" onclick="fifty()">
-                    fiftyfifty
-                </button>
-                <button id="expert" onclick="askExpert()">
-                    Ask an expert
-                </button>
             </div>
 
             <!--Container to be shown after quiz has ended-->
             <div id="end" style="display:none">
-                <p>Thankyou for playing, you can start the quiz again on the home page</p>
             </div>
 
-            <!--Container for reset button-->
             <div id="reset" style="display:none">
                 <button id="home" onclick="reset()">
                     Try Again
                 </button>
             </div>
 
+            <!--This div holds the game which will be displayed once the user selects the start button-->
+            <div id="game" style="display:none">
+
+                <!--Image Holder for Questions-->
+                <div id="imageQuestion">
+                </div>
+
+                <!--Container for Answer Buttons-->
+                <div id="answers">
+                    <button id="answer1" class="answbtn" onclick="userChoice('a')"></button>
+                    <button id="answer2" class="answbtn" onclick="userChoice('b')"></button>
+                    <button id="answer3" class="answbtn" onclick="userChoice('c')"></button>
+                    <button id="answer4" class="answbtn" onclick="userChoice('d')"></button>
+                </div>
+
+                <!--Container for the three "lifelines" buttons-->
+                <div id="help">
+                    <h3 id="lifelines">LIFELINES</h3>
+                    <button id="friend" onclick="friend()">
+                        Phone a friend
+                    </button>
+                    <button id="fiftyfifty" onclick="fifty()">
+                        fiftyfifty
+                    </button>
+                    <button id="expert" onclick="askExpert()">
+                        Ask an expert
+                    </button>
+                </div>
+
+                <!--Container to be shown after quiz has ended-->
+                <div id="end" style="display:none">
+                    <p>Thankyou for playing, you can start the quiz again on the home page</p>
+                </div>
+
+                <!--Container for reset button-->
+                <div id="reset" style="display:none">
+                    <button id="home" onclick="reset()">
+                        Try Again
+                    </button>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </section>
+
     <!--footer-->
     <footer>
         &copy; Copyright 2021 Josh Mclynn
