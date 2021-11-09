@@ -9,8 +9,8 @@ body {
 }
 
 /*Background for entire application*/
-#background {
-    background-image: url(../img/background.png);
+section{
+    background-image: url(../images/background.png);
     height: 42rem;
     background-attachment: fixed;
     background-position: center;
@@ -222,6 +222,9 @@ footer {
         margin-left: 26rem;
         height: 8rem;
         width: 50rem;
+    }
+    #section{
+        width:89.5rem;
     }
 }
 
