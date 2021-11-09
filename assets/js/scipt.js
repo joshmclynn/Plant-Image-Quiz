@@ -180,7 +180,7 @@ function reset() {
 
 
 let questionArr = [{
-    question: "assets/img/geranium.jpg",
+    question: "assets/images/geranium.jpg",
     choice1: ["Sunflower", "a"],
     choice2: ["Erigeron", "b"],
     choice3: ["Osmanthus", "c"],
@@ -188,7 +188,7 @@ let questionArr = [{
     correctAnswer: ["d", "Geranium"],
   },
   {
-    question: "assets/img/osmanthus.jpg",
+    question: "assets/images/osmanthus.jpg",
     choice1: ["Sunflower", "a"],
     choice2: ["Erigeron", "b"],
     choice3: ["Osmanthus", "c"],
@@ -196,7 +196,7 @@ let questionArr = [{
     correctAnswer: ["c", "Osmanthus"],
   },
   {
-    question: "assets/img/erigeron.jpg",
+    question: "assets/images/erigeron.jpg",
     choice1: ["Sunflower", "a"],
     choice2: ["Erigeron", "b"],
     choice3: ["Osmanthus", "c"],
@@ -204,7 +204,7 @@ let questionArr = [{
     correctAnswer: ["b", "Erigeron"],
   },
   {
-    question: "assets/img/caryopteris.jpg",
+    question: "assets/images/caryopteris.jpg",
     choice1: ["Caryopteris", "a"],
     choice2: ["Viburnum", "b"],
     choice3: ["Skimmia", "c"],
@@ -212,7 +212,7 @@ let questionArr = [{
     correctAnswer: ["a", "Caryopteris"],
   },
   {
-    question: "assets/img/dodonaea.jpg",
+    question: "assets/images/dodonaea.jpg",
     choice1: ["Buxus", "a"],
     choice2: ["Prunus", "b"],
     choice3: ["Dodonaea", "c"],
@@ -220,7 +220,7 @@ let questionArr = [{
     correctAnswer: ["c", "Dodonaea"],
   },
   {
-    question: "assets/img/persicaria.jpg",
+    question: "assets/images/persicaria.jpg",
     choice1: ["Lavender", "a"],
     choice2: ["Verbena", "b"],
     choice3: ["Persicaria", "c"],
@@ -228,7 +228,7 @@ let questionArr = [{
     correctAnswer: ["c", "Persicaria"],
   },
   {
-    question: "assets/img/eupatorium.jpg",
+    question: "assets/images/eupatorium.jpg",
     choice1: ["Buxus", "a"],
     choice2: ["Persicaria", "b"],
     choice3: ["Geranium", "c"],
@@ -236,7 +236,7 @@ let questionArr = [{
     correctAnswer: ["d", "Eupatorium"],
   },
   {
-    question: "assets/img/melianthus.jpg",
+    question: "assets/images/melianthus.jpg",
     choice1: ["Sunflower", "a"],
     choice2: ["Melianthus", "b"],
     choice3: ["Erigeron", "c"],
@@ -244,7 +244,7 @@ let questionArr = [{
     correctAnswer: ["b", "Melianthus"],
   },
   {
-    question: "assets/img/prunus.jpg",
+    question: "assets/images/prunus.jpg",
     choice1: ["Taxus", "a"],
     choice2: ["Viburnum", "b"],
     choice3: ["Prunus", "c"],
@@ -252,7 +252,7 @@ let questionArr = [{
     correctAnswer: ["c", "Prunus"],
   },
   {
-    question: "assets/img/ribes-sanguineum.jpg",
+    question: "assets/images/ribes-sanguineum.jpg",
     choice1: ["Ribes-Sanguineum", "a"],
     choice2: ["Erigeron", "b"],
     choice3: ["Prunus", "c"],

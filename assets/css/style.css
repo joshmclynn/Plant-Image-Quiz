@@ -252,7 +252,7 @@ footer {
 /*Tablet etc*/
 @media only screen and (min-width:600px) and (max-width:949px) {
     #head>img {
-        width: 47rem;
+        width: 47.5rem;
         height: 8rem;
 
     }
@@ -260,7 +260,7 @@ footer {
 /*small Mobile phone 340px and below*/
 @media only screen and (max-width:340px) {
     #head>img {
-        width: 19rem;
+        width: 19.5rem;
         height: 4rem;
     }
     #onload {
