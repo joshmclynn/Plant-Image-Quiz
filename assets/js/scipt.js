@@ -1,3 +1,6 @@
+/**
+ * Initial variables
+ */
 const start = document.getElementById('startQuiz');
 const questioncon = document.getElementById('imageQuestion');
 const quiz = document.getElementById("game");
@@ -13,14 +16,13 @@ const fiftybtn = document.getElementById("fiftyfifty");
 const onloadscrn = document.getElementById("onload");
 const expertbtn = document.getElementById("expert");
 const instructbtn = document.getElementById("instructionbtn");
-
 let currentScore = 0;
 let currentQuestion = 0;
 let incorrectCount = 0;
 
-
-
-
+/**
+ * Function to check whether the user has completed the quiz and to enable the buttons
+ */
 function loadNextQ() {
   currentQuestion = currentQuestion + 1;
   if (currentQuestion >= questionArr.length) {
@@ -35,7 +37,9 @@ function loadNextQ() {
     getNextQuestion();
   }
 }
-//creates question and loads answers onto buttons x 
+/**
+ * Displays the next question and adds the answers to the buttons
+ */
 function getNextQuestion() {
   a = questionArr[currentQuestion];
   questioncon.innerHTML = "<img src =" + a.question + ">";
@@ -54,6 +58,9 @@ function userChoice(answer) {
   }
 }
 
+/**
+ * Function for pop up when the user selects an correct answer
+ */
 function correctAnswer() {
   //sweetAlert2
   Swal.fire({
@@ -65,6 +72,9 @@ function correctAnswer() {
   loadNextQ();
 }
 
+/**
+ * Function for pop up when the user selects an incorrect answer
+ */
 function incorrectAnswer() {
   //sweetAlert2
   Swal.fire({
@@ -74,7 +84,10 @@ function incorrectAnswer() {
   incorrectCount = incorrectCount+1;
   loadNextQ();
 }
-//fifty fifty chance function
+
+/**
+ * "fifty fifty" function, takes away two incorrect answers leaving the correct answer and an incorrect answer
+ */
 function fifty() {
   x = questionArr[currentQuestion].correctAnswer[0];
   a = questionArr[currentQuestion];
@@ -108,7 +121,10 @@ function fifty() {
   }
   fiftybtn.style.display = "none";
 }
-//function for phone a friend
+
+/**
+ * "phone a friend function, Two outcomes depending on a random number being generated"
+ */
 function friend() {
   c = questionArr[currentQuestion];
   x = a.correctAnswer[1];
@@ -116,7 +132,6 @@ function friend() {
   console.log(r);
   
   if (r <= 1) {
-    //sweetAlert2
     Swal.fire({
       title: "Phoning Friend",
       text: "Oh sorry, I know nothing about gardening."
@@ -124,7 +139,6 @@ function friend() {
   }
   
   if (r >= 1) {
-    //sweetAlert2
     Swal.fire({
       title: "Phoning Friend",
       text: "Its definately " + x + " 100%",
@@ -134,6 +148,9 @@ function friend() {
   friendbtn.style.display = "none";
 }
 
+/**
+ * Ask the expert function, always displays the correct answer.
+ */
 function askExpert() {
   x = a.correctAnswer[1];
   //sweetAlert
@@ -144,13 +161,18 @@ function askExpert() {
   expertbtn.style.display = "none";
 }
 
+/**
+ * Function to show the instructions when clicked on the opening page
+ */
 function instruction() {
   Swal.fire({
     title: 'The Rules',
     text: 'In this quiz you will get four choices where one will be the name of the plant in the picture, use the lifelines in order to gain an advantage, but be careful you can only use them once.'
   });
 }
-/**Question list
+
+/**
+ * End game functions, two outcomes depending on what the user scored
  */
 function endGame() {
   game.style.display = "none";
@@ -173,12 +195,17 @@ function endGame() {
   end.style.display = "block";
 }
 
+/**
+ * Function to reset game after the user has finished
+ */
 function reset() {
   currentScore = 0;
   location.reload();
 }
 
-
+/**
+ * Array for questions and correct answer
+ */
 let questionArr = [{
     question: "assets/images/geranium.jpg",
     choice1: ["Sunflower", "a"],
@@ -261,8 +288,14 @@ let questionArr = [{
   }
 ];
 
+/**
+ * Event listener for starting the game
+ */
 start.addEventListener('click', newGame);
 
+/**
+ * New game function, hiding the onload container and showing the quiz container also re enables lifelines that may have been used in the previous game
+ */
 function newGame() {
   onloadscrn.style.display = "none";
   game.style.display = "grid";
