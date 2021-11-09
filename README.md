@@ -52,19 +52,19 @@ Being a game based around gardening, I thought it important to keep to different
    * Answer buttons : #9fe3b1
    * LifeLine buttons : #32b459
 #### Back-grounds
-The background of the website is a custom image creating using adobe photoshop, Intended to mimic a silhouetted flower bed keeping within the theme of "green" it only contains two shades of green.
+The background of the website is a custom image creating using adobe photoshop, Intended to mimic a silhouetted flower bed keeping within the theme of "green" it only contains two shades of green.  
 ![Background image](/docs/screen-shots/background.PNG "Background used in site")
 ## Features
 ### Header Element
-The Header element contains a custom made image created in photoshop, which further adds into the gardening theme which is throughout the website.
+The Header element contains a custom made image created in photoshop, which further adds into the gardening theme which is throughout the website.  
 ![Header Image](/docs/screen-shots/header.PNG "Header used in site")
 ### Onload Page
-This container contains the button to access the instructions for the quiz and the button to start the quiz.
+This container contains the button to access the instructions for the quiz and the button to start the quiz.  
 ![Onload page](/docs/screen-shots/onload.PNG "Onload page")
 ### Imagery
 The Question is asked as an image with the user having to make their decision from the image given.
 ### Answers
-The answers are laid out in a group of four and are one touch answering buttons.  
+The answers are laid out in a group of four and are one touch answering buttons.    
 ![Answers buttons](/docs/screen-shots/answersbutton.PNG "Answer buttons on site")
 ### "Lifelines"
 The user has the ability to use three life-lines, they can only use each of these lifelines once during the quiz.
@@ -73,7 +73,7 @@ The user has the ability to use three life-lines, they can only use each of thes
    * #### Phone a Friend
      This life-line "phones" a friend and asks them for the answer, with two outcomes depending on a random number generated.
    * #### Ask an Expert
-     This life-line will always return the correct answer.
+     This life-line will always return the correct answer.  
      ![Life Lines Element](/docs/screen-shots/lifelines.PNG "Lifelines Element")
 ## Future Goals
 In the future this website would be improved through the following:-
@@ -95,30 +95,30 @@ Below are the technologies used in the building of this website.
    * [Sweet Alerts 2](https://sweetalert2.github.io/#examples)
 ## Testing
    * ### Browsers and Devices
-     The site has been tested on a variety of android phones including: 
-     * samsung
-     * Google
-     * Huaweii
-     The site has been tested on a variety of apple products including:
-     * Apple Iphone 8 and 11
-     * Apple Ipad(Safari)
-     * Apple MacbookAir (Chrome + Safari)
-     The site has been tested on laptops including:
-     * Microsoft surface PRO
-     Browsers the site has been tested on inlucde:
-     * Edge
-     * Chrome
-     * Safari
-     * Samsung Internet
+      * The site has been tested on a variety of android phones including: 
+        * samsung
+        * Google
+        * Huaweii
+     * The site has been tested on a variety of apple products including:
+        * Apple Iphone 8 and 11
+        * Apple Ipad(Safari)
+        * Apple MacbookAir (Chrome + Safari)
+     * The site has been tested on laptops including:
+        * Microsoft surface PRO
+     * Browsers the site has been tested on inlucde:
+        * Edge
+        * Chrome
+        * Safari
+        * Samsung Internet
    * ### Issues and Resolutions
      * When adding a back-ground image through css it would work locally, but wouldnt work when commited to git-hub and displayed on git-pages, Unknown as to the reasoning why as the same code was uploaded fairly soon after with minimal changes and it would work.
      * When passing the Javascript through [JSHINT](https://jshint.com/) it would return messages over unsused variables, I could get rid of this by declaring the variables as blank but decided it wasnt needed in this instant.
    * ### Validators
-     * #### HTML 
+     * #### HTML   
      ![HTML Validator W3](/docs/screen-shots/htmlvali.PNG "HTML VALIDATOR")
-     * #### CSS
+     * #### CSS  
      ![CSS VALIDATOR JIGSAW](/docs/screen-shots/cssvali.PNG "CSS VALIDATOR")
-   * ### Lighthouse
+   * ### Lighthouse  
      ![Lighthouse](/docs/screen-shots/lighthous.PNG "LIGHTHOUSE CHECK")
    * ### Responsiveness
      * Current media queries at:
@@ -129,27 +129,18 @@ Below are the technologies used in the building of this website.
                                * (1101px to 1350px) Medium/Large Laptop
                                * (1351 and above) Desktop
       * Although initially designed for an average mobile phone size, the site scales all the way up to desktop using media queries
-    ## Known Bugs
+## Known Bugs
      * Currently none
-     
-    ## Deployment
-    The site is deployed on GitHub pages via the following:
-    1.From the projects repository go to the settings tab.
-    2.On the left hand menu near towards the bottoms click the pages link.
-    3.Under source, click on the button "none" which will produce a drop down.
-    4.Click on main and then click Save.
-    5.The following message will appear: "Your site is ready to be published".
-    6.After a few minutes he site will be published and the message will change to "Your site is published".
-    
-    You can access the live site via the following linke [Plant Based Quiz](https://joshmclynn.github.io/Plant-Image-Quiz/)
-    
-    ## Credits
-    
-    ### Media 
-    * All images and background have been either created through adobe photoshop or taken by myself.
-    
-    ### Content
-    * "life-lines" take inspiration from "Who wants to be a millionaire" [Who wants to be a millionaire](https://en.wikipedia.org/wiki/Who_Wants_to_Be_a_Millionaire%3F)
+## Deployment
+   * The site was deployed to GitHub pages. The steps to deploy are below
+      - In the github repository, navigate to the settings tab.
+      - From the source section, select the master branch.
+      - Once the master branch has been selected, the page provided the link to the completed website.
+      - you can access the live site via the following link [Plant Based Quiz](https://joshmclynn.github.io/Plant-Image-Quiz/).
+## Credits
+   * All images and background have been either created through adobe photoshop or taken by myself.
+## Content
+   * Life-lines take inspiration from Who Wants to be a Millionaire.
      
 
 
