@@ -115,6 +115,11 @@ body {
     border-color: #32b459;
 }
 
+/*Container for Help features*/
+#help{
+    text-align: center;
+}
+
 /*buttons displayed in the lifelines container*/
 #help>button {
     border: 0.1em solid #000000;
