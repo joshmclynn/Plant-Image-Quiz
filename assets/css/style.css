@@ -2,12 +2,13 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Mobile first 375px*/
+/*Designed first as a 375px Phone*/
 body {
     font-family:  Helvetica, Arial, sans-serif;
     margin: 3px;
 }
 
+/*Background for entire application*/
 #background {
     background-image: url(../img/background.png);
     height: 42rem;
@@ -17,21 +18,25 @@ body {
     background-size: cover;
 }
 
+/*header image*/
 #head>img {
     width: 23rem;
     height: 6rem;
 }
 
+/*container shown when user navigates to application*/
 #onload {
     height: 48rem;
     display: grid;
     grid-template-columns: 100%;
 }
 
+/*Welcome text*/
 #welcome {
     text-align: center;
 }
 
+/*container to hold the entire game*/
 #game {
     display: grid;
     grid-template-columns: 100%;
@@ -44,11 +49,13 @@ body {
     ;
 }
 
+/*container that holds the question*/
 #imageQuestion {
     grid-area: imageQuestion;
     margin-top: 1rem;
 }
 
+/*image displayed within question area*/
 #imageQuestion>img {
     height: 23rem;
     margin-left: auto;
@@ -56,6 +63,7 @@ body {
     display: block;
 }
 
+/*container for LifeLines*/
 #sidebar {
     grid-area: sidebar;
     display: grid;
@@ -64,6 +72,7 @@ body {
     text-align: center;
 }
 
+/*container for answer buttons*/
 #answers {
     grid-area: answers;
     display: grid;
@@ -74,14 +83,14 @@ body {
         "3 4";
 }
 
+/*container for lifelines section*/
 #lifelines {
     background-color: #9fe3b1;
     font-size: 1.5rem;
     width: 100%;
 }
 
-
-
+/*Answer buttons in quiz*/
 .answbtn {
     display: inline-block;
     padding: 0.3em 1.2em;
@@ -99,12 +108,14 @@ body {
     transition: all 0.2s;
 }
 
+/*answer button when hovered over*/
 .answbtn:hover {
     text-shadow: 0 0 2em rgba(255, 255, 255, 1);
     color: #000000;
     border-color: #32b459;
 }
 
+/*buttons displayed in the lifelines container*/
 #help>button {
     border: 0.1em solid #000000;
     margin: 0 0.2em 0.2em 0;
@@ -121,6 +132,7 @@ body {
     padding: 10px;
 }
 
+/*Buttons displayed on the home screen*/
 #onload>button {
     display: inline-block;
     padding: 0.5em 3em;
@@ -136,16 +148,7 @@ body {
     transition: all 0.15s;
 }
 
-#onload>button:hover {
-    color: #DDDDDD;
-    border-color: #DDDDDD;
-}
-
-#onload>button:active {
-    color: #BBBBBB;
-    border-color: #BBBBBB;
-}
-
+/*button that links to instructions pop up*/
 #instructionbtn {
     width: 100%;
     height: 6rem;
@@ -161,6 +164,7 @@ body {
     font-size: 1.5rem;
 }
 
+/*Button for starting the quiz*/
 #startQuiz {
     width: 100%;
     height: 6rem;
@@ -176,10 +180,12 @@ body {
     font-size: 1.5rem;
 }
 
+/*container holding reset button*/
 #reset {
     height: 650px;
 }
 
+/*button to reset game*/
 #home {
     width: 100%;
     height: 6rem;
@@ -196,11 +202,13 @@ body {
     margin-top: 24rem;
 }
 
+/*container shown at end of quiz*/
 #end {
     font-size: 1.5rem;
     text-align: center;
 }
 
+/*footer*/
 footer {
     text-align: center;
 }
@@ -240,7 +248,7 @@ footer {
 
     }
 }
-
+/*small Mobile phone 340px and below*/
 @media only screen and (max-width:340px) {
     #head>img {
         width: 19rem;
