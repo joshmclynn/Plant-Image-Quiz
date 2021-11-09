@@ -122,12 +122,12 @@ Below are the technologies used in the building of this website.
      ![Lighthouse](/docs/screen-shots/lighthous.PNG "LIGHTHOUSE CHECK")
    * ### Responsiveness
      * Current media queries at:
-                               * (340px and below)Small Phone
-                               * (Designed at 375px)Average Phone
-                               * (600px to 949px) Tablet
-                               * (950px to 1100px) Small Laptop
-                               * (1101px to 1350px) Medium/Large Laptop
-                               * (1351 and above) Desktop
+         * (340px and below)Small Phone
+         * (Designed at 375px)Average Phone
+         * (600px to 949px) Tablet
+         * (950px to 1100px) Small Laptop
+         * (1101px to 1350px) Medium/Large Laptop
+         * (1351 and above) Desktop
       * Although initially designed for an average mobile phone size, the site scales all the way up to desktop using media queries
 ## Known Bugs
      * Currently none
